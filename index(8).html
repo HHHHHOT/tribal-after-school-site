@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《Beat之間》｜線上閱讀</title>
+  <meta name="description" content="《Beat之間》第一篇＋第二篇線上閱讀">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+      overflow: hidden;
+    }
+    .topbar {
+      height: 52px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      background: #111;
+      color: white;
+      border-bottom: 1px solid #333;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .open-btn {
+      color: white;
+      text-decoration: none;
+      border: 1px solid #666;
+      border-radius: 8px;
+      padding: 7px 12px;
+      font-size: 14px;
+    }
+    .viewer {
+      width: 100%;
+      height: calc(100% - 52px);
+      border: 0;
+      background: white;
+    }
+    .fallback {
+      position: absolute;
+      inset: 52px 0 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 24px;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="title">《Beat之間》｜第一篇＋第二篇</div>
+    <a class="open-btn" href="index.pdf" target="_blank" rel="noopener">開啟完整 PDF</a>
+  </div>
+
+  <div class="fallback">
+    如果漫畫沒有自動顯示，請點右上角「開啟完整 PDF」。
+  </div>
+
+  <iframe class="viewer" src="index.pdf#view=FitH" title="《Beat之間》漫畫閱讀器"></iframe>
+</body>
+</html>

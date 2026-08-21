@@ -1,47 +1,302 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>部落課輔班｜活動成果</title>
-
-  <meta
-    name="description"
-    content="部落課輔班活動成果與學習紀錄"
-  />
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: #f3ead9;
-    }
-
-    iframe {
-      display: block;
-      width: 100%;
-      height: 100vh;
-      border: 0;
-    }
-  </style>
+<!-- saved from url=(0057)https://maljeveq-witch-training.a0976207237.chatgpt.site/ -->
+<html lang="zh-Hant"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>迎正神｜女巫實戰訓練</title>
+<style>
+:root{--wine:#793f52;--rose:#c98392;--blush:#f3d9d9;--cream:#fff8ef;--ink:#46363d;--gold:#cda766;--glass:#fff9f0e8}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 20% 10%,#f6dbdb,#a96f7e 48%,#382c3a);color:var(--ink);font-family:"Noto Serif TC","Microsoft JhengHei",serif;overflow-x:hidden}
+button,input{font:inherit}.phone{width:min(100%,430px);height:100svh;min-height:680px;margin:auto;position:relative;overflow:hidden;background:#1c1820;box-shadow:0 0 80px #2a1423aa}
+.scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .5s,transform 1.1s;filter:saturate(.9) brightness(.82)}
+.wash{position:absolute;inset:0;background:linear-gradient(180deg,#351e2a1a 30%,#311a2d44 57%,#170f19e8 100%);pointer-events:none}
+.petal{position:absolute;width:12px;height:20px;background:#f6cbd3a8;border-radius:80% 10% 80% 20%;animation:fall 10s linear infinite;pointer-events:none}.petal.p2{left:66%;animation-delay:-4s}.petal.p3{left:31%;animation-delay:-7s}.petal.p4{left:86%;animation-delay:-2s}
+@keyframes fall{from{top:-30px;transform:rotate(0)}to{top:105%;transform:rotate(440deg) translateX(50px)}}
+.top{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;gap:10px;padding:max(12px,env(safe-area-inset-top)) 14px 11px;background:linear-gradient(#251924e8,transparent);z-index:4}
+.portrait{width:54px;height:54px;border-radius:50%;object-fit:cover;object-position:50% 28%;border:2px solid #f2d4ae;box-shadow:0 0 0 3px #7c4654,0 5px 16px #0008}
+.profile{min-width:0}.profile b{color:white;font-size:.94rem;letter-spacing:.08em}.rank{font-size:.65rem;color:#eac9c3;margin-top:3px}
+.love{margin-top:6px;width:128px;height:7px;background:#1e151dbb;border:1px solid #d5a0aa;border-radius:9px;overflow:hidden}.love i{height:100%;display:block;background:linear-gradient(90deg,#d9677e,#ffd2cb);transition:width .5s}
+.heart{color:#ffb1bd;font-size:.75rem;margin-left:5px}.tools{margin-left:auto;display:flex;gap:6px}.icon{width:36px;height:36px;border-radius:50%;border:1px solid #d4b089;background:#3d2638c9;color:#ffebd4;display:grid;place-items:center;cursor:pointer}.icon:active{transform:scale(.92)}
+.chapter{position:absolute;top:86px;right:15px;color:#f8e9db;font-size:.68rem;letter-spacing:.15em;text-shadow:0 2px 6px #000;z-index:2}
+.sprite{position:absolute;left:3%;right:3%;top:13%;height:53%;display:flex;justify-content:center;align-items:flex-start;pointer-events:none;transition:.4s}
+.sprite img{height:100%;max-width:100%;object-fit:cover;object-position:center 25%;border-radius:48% 48% 10% 10% / 20% 20% 6% 6%;mask-image:linear-gradient(#000 70%,transparent 100%);filter:drop-shadow(0 12px 15px #140b16aa);transition:opacity .22s,transform .22s}
+.dialogue{position:absolute;left:13px;right:13px;bottom:max(13px,env(safe-area-inset-bottom));z-index:3}
+.nameplate{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(90deg,#783c50,#a45f6e);color:white;padding:7px 22px 7px 14px;border-radius:16px 16px 0 0;font-weight:bold;letter-spacing:.12em;box-shadow:0 -4px 14px #0003}
+.nameplate:before{content:"✦";color:#f8d7a5;font-size:.7rem}.box{min-height:132px;background:var(--glass);border:1px solid #e9c9ad;border-radius:0 18px 18px 18px;padding:18px 18px 14px;box-shadow:0 15px 40px #100711b8,inset 0 0 35px #fff8ee}
+.text{font-size:1rem;line-height:1.8;min-height:64px}.next{float:right;border:0;background:transparent;color:var(--wine);font-size:1.1rem;animation:pulse 1.2s infinite;cursor:pointer}.choices{display:grid;gap:9px;margin-bottom:10px}
+.choice{border:1px solid #efd4c0;background:linear-gradient(100deg,#fffaf3ed,#f3d9dff2);color:#603749;border-radius:999px;padding:12px 17px;box-shadow:0 5px 14px #24101c5c;text-align:center;cursor:pointer;transition:.18s}.choice:hover{transform:translateY(-2px);border-color:#bf7183}.choice small{display:block;font-size:.65rem;color:#a26877;margin-top:3px}
+.page-nav{display:flex;align-items:center;gap:8px;float:left}.page-back,.chapter-return{border:1px solid #b78c72;background:#fff8ef;color:#6b493f;border-radius:8px;padding:7px 13px;cursor:pointer}.page-back:hover,.chapter-return:hover{background:#f2ded2}.chapter-list{display:grid;gap:12px}.chapter-card{width:100%;border:1px solid #d7b89e;background:linear-gradient(120deg,#fff,#f4e4d9);border-radius:12px;padding:16px;text-align:left;color:#513f3e;cursor:pointer}.chapter-card:hover{border-color:#8b5d52;transform:translateY(-1px)}.chapter-card b{display:block;color:#75463f;font-size:1rem}.chapter-card small{display:block;margin-top:6px;color:#8d7770;line-height:1.5}.chapter-note{font-size:.72rem;color:#8d7770;margin:0 0 14px}
+.summary-screen{position:absolute;inset:0 0 0 245px;z-index:18;display:none;place-items:center;padding:38px;background:radial-gradient(circle at 50% 25%,#75594b99,#171b1bea 72%);backdrop-filter:blur(6px)}.summary-screen.on{display:grid}.summary-panel{width:min(920px,94%);max-height:88vh;overflow:auto;position:relative;padding:34px 48px 30px;text-align:center;color:#f8efe3;background:linear-gradient(145deg,#2b332ff2,#211c20f4);border:1px solid #c9a875;border-radius:4px;box-shadow:0 25px 80px #000b,inset 0 0 60px #b88b5120}.summary-panel:before,.summary-panel:after{content:"";position:absolute;width:42px;height:42px;border-color:#d4b37c}.summary-panel:before{left:12px;top:12px;border-left:2px solid;border-top:2px solid}.summary-panel:after{right:12px;bottom:12px;border-right:2px solid;border-bottom:2px solid}.summary-kicker{font-size:.72rem;letter-spacing:.42em;color:#d9ba84}.summary-title{margin:9px 0 10px;font-size:1.65rem;letter-spacing:.16em;color:#fff5e5}.summary-ornament{display:flex;align-items:center;justify-content:center;gap:13px;color:#d4ad72;margin-bottom:18px}.summary-ornament:before,.summary-ornament:after{content:"";width:90px;height:1px;background:linear-gradient(90deg,transparent,#cda766)}.summary-ornament:after{transform:scaleX(-1)}.summary-arts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:min(650px,100%);margin:0 auto 20px}.summary-arts figure{height:108px;margin:0;overflow:hidden;border:1px solid #b89569;background:#181615;position:relative}.summary-arts img{width:100%;height:100%;object-fit:cover;filter:saturate(.75) sepia(.12)}.summary-arts figure:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 20px #0007}.summary-copy{max-width:760px;margin:auto;font-size:.96rem;line-height:1.9;text-align:left;color:#eadfd2}.summary-copy b{display:none}.summary-actions{display:flex;justify-content:center;gap:12px;margin-top:23px}.summary-actions button{border:1px solid #c8a36e;border-radius:3px;padding:10px 18px;background:#342a28;color:#f6e9d5;cursor:pointer}.summary-actions button:hover{background:#755441}.summary-actions .continue{background:#8a6045}.summary-seal{width:42px;height:42px;margin:0 auto 7px;border:1px solid #d1af76;border-radius:50%;display:grid;place-items:center;color:#d9b57a;font-size:1.1rem}
+.word-stage{text-align:center}.word-progress{font-size:.72rem;color:#967b72;letter-spacing:.08em}.word-term{font-size:1.7rem;color:#754653;margin:16px 0 7px}.word-hint{font-size:.76rem;color:#957d78;margin-bottom:17px}.word-options{display:grid;gap:9px}.word-option{border:1px solid #d4b2a0;border-radius:10px;background:#fff;color:#62474b;padding:12px;cursor:pointer}.word-option:hover{background:#f4e2dd}.word-option.correct{background:#dcebdc;border-color:#6f9b72}.word-option.wrong{background:#f2d8d8;border-color:#b87373}.word-feedback{min-height:28px;margin:13px 0 4px;color:#754653}.word-score{font-weight:bold;color:#7a4a55}
+.word-modes{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:18px}.word-mode{border:1px solid #caa3a8;background:#f7e7e5;color:#714a54;border-radius:8px;padding:8px 5px;cursor:pointer;font-size:.76rem}.word-mode.active{background:#754653;color:#fff;border-color:#754653}.memory-card{min-height:150px;display:grid;place-items:center;border:1px solid #c6a288;border-radius:14px;background:linear-gradient(135deg,#fffaf1,#ead7cc);box-shadow:0 8px 22px #4b27302b;cursor:pointer;padding:22px}.memory-card .front{font-size:1.55rem;color:#734655}.memory-card .back{font-size:1.08rem;color:#684f50}.memory-card.flipped{background:linear-gradient(135deg,#efe2d2,#fff)}.spell-line{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:3px;padding:20px 8px;border:1px solid #dac2b2;border-radius:12px;background:#fff}.spell-char{display:inline-grid;place-items:center;width:25px;height:34px;font-size:1.08rem;color:#6f4c52;border-bottom:1px solid #b99791}.spell-input{width:27px;height:34px;border:1px solid #ba8d94;border-radius:5px;text-align:center;font-size:1rem;color:#6f4050;background:#fff8f4}.spell-input:focus{outline:2px solid #d6a8ae}.spell-input.correct{background:#dcebdc}.spell-input.wrong{background:#f2d8d8}
+.summary-screen.supplement .summary-panel{width:min(1040px,96%);padding-top:26px}.summary-screen.supplement .summary-arts{margin-bottom:14px}.summary-screen.supplement .summary-arts figure{height:76px}.culture-layout{display:grid;gap:12px;text-align:left}.culture-heading{font-size:.72rem;letter-spacing:.2em;color:#d8b57d;margin-bottom:7px}.culture-requirements{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.req-chip{display:flex;align-items:center;justify-content:center;gap:7px;min-height:46px;border:1px solid #9f805c;background:#302a28;color:#f4e7d3}.req-chip i{font-style:normal;color:#d8ae70}.culture-principle{padding:12px 15px;border-left:3px solid #c39b65;background:#191d1caa;color:#e7d9c8;line-height:1.65}.culture-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.culture-card{padding:14px;border:1px solid #7f6d59;background:linear-gradient(145deg,#30302d,#242424);min-height:190px}.culture-card h3{margin:0 0 9px;color:#f2d9ae;font-size:.95rem}.culture-card .num{display:inline-grid;place-items:center;width:23px;height:23px;margin-right:6px;border:1px solid #c9a269;border-radius:50%;color:#d7b47e}.culture-card p{margin:0;color:#ddd0c1;font-size:.8rem;line-height:1.7}.term{display:inline-block;color:#efc884;border-bottom:1px dotted #bd9660}.culture-conclusion{padding:10px 14px;text-align:center;border:1px solid #a8875d;background:#6d4d342e;color:#f1dfc5;font-size:.82rem}.culture-conclusion b{display:inline!important;color:#f5cc89}@media(max-width:1050px){.culture-card{min-height:220px}.culture-card p{font-size:.75rem}}
+.training-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.training-card{padding:13px 15px;border:1px solid #7f6d59;background:linear-gradient(145deg,#30302d,#242424)}.training-card h3{margin:0 0 7px;color:#f2d9ae;font-size:.92rem}.training-card p{margin:0;color:#ddd0c1;font-size:.79rem;line-height:1.65}.training-card.wide{grid-column:1/-1}.practice-flow{display:flex;align-items:stretch;gap:6px;margin-top:8px}.practice-step{flex:1;padding:9px 6px;text-align:center;border:1px solid #8b7356;background:#201f1e;color:#ecdcc6;font-size:.72rem}.practice-arrow{display:grid;place-items:center;color:#cba369}@media(max-width:1050px){.training-card p{font-size:.73rem}.practice-step{font-size:.68rem}}
+.summary-arts figcaption{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:5px 7px;background:#171413c9;color:#f2dfc3;font-size:.66rem;letter-spacing:.08em}
+.summary-screen.supplement .summary-panel{width:min(1120px,97%)}.summary-screen.supplement .summary-arts{width:min(900px,100%);margin-bottom:18px;gap:14px}.summary-screen.supplement .summary-arts figure{height:180px;background:#171513;border-color:#c8a36e}.summary-screen.supplement .summary-arts img{object-fit:contain;filter:none;padding:5px}
+.exam-screen{position:absolute;inset:0 0 0 245px;z-index:24;display:none;place-items:center;overflow:hidden;background:radial-gradient(circle at 50% 40%,#7c382ce8 0,#29191aef 48%,#090d0ded 100%);color:#fff}
+.exam-screen.on{display:grid}.exam-screen:before,.exam-screen:after{content:"";position:absolute;inset:-35%;background:repeating-conic-gradient(from 20deg,transparent 0 9deg,#d7a45e12 10deg 11deg);animation:examSweep 12s linear infinite;pointer-events:none}.exam-screen:after{animation-direction:reverse;animation-duration:18s;filter:blur(2px)}
+.exam-panel{position:relative;z-index:2;width:min(920px,90%);padding:34px 46px 38px;border:1px solid #e0b66c;background:linear-gradient(145deg,#221817f2,#3c211ff0);box-shadow:0 30px 90px #000,inset 0 0 70px #b32e231f;text-align:center}.exam-kicker{font-size:.76rem;letter-spacing:.4em;color:#e9bc75}.exam-head{display:flex;align-items:center;justify-content:space-between;margin:10px 0 18px;color:#f4dfbf}.exam-head b{font-size:1.05rem}.exam-timer{font-size:2rem;font-weight:800;color:#ffd58e;text-shadow:0 0 18px #e75b33}.exam-track{height:10px;border:1px solid #bb7d55;background:#130e0d;margin-bottom:28px;overflow:hidden}.exam-fill{height:100%;width:100%;transform-origin:left;background:linear-gradient(90deg,#e9c06d,#dc4b35);transition:width .1s linear}.exam-question{font-size:2.7rem;letter-spacing:.06em;margin:5px 0 8px;color:#fff4dc}.exam-prompt{color:#d9c1aa;margin-bottom:24px}.exam-options{display:grid;grid-template-columns:1fr 1fr;gap:14px}.exam-option{min-height:70px;border:1px solid #b99161;background:#382a27;color:#fff0d8;font-size:1.08rem;padding:15px;cursor:pointer}.exam-option:hover{background:#694132;transform:translateY(-2px)}.exam-option.correct{background:#31583f;border-color:#8ed19d}.exam-option.wrong{background:#7b302b;border-color:#ef8d7e}.exam-option:disabled{cursor:default;transform:none}.exam-feedback{min-height:32px;margin-top:20px;color:#ffd796;font-size:1.05rem}.exam-result{font-size:1.35rem;line-height:1.8}.exam-result strong{display:block;font-size:3rem;color:#ffd184}.exam-finish{margin-top:24px;border:1px solid #f0c77a;background:#8c4933;color:#fff4df;padding:13px 30px;font-size:1rem;cursor:pointer}@keyframes examSweep{to{transform:rotate(360deg)}}
+@keyframes pulse{50%{transform:translateX(3px);opacity:.45}}
+.toast{position:absolute;top:115px;left:50%;transform:translate(-50%,-10px);background:#fff8efeb;border:1px solid var(--gold);padding:9px 16px;border-radius:20px;z-index:12;opacity:0;pointer-events:none;transition:.3s;white-space:nowrap;box-shadow:0 8px 25px #0005}.toast.on{opacity:1;transform:translate(-50%,0)}
+dialog{width:min(92%,390px);max-height:82vh;border:1px solid #e5c59e;border-radius:22px;background:#fff9f2;color:var(--ink);padding:0;box-shadow:0 30px 80px #210d1fc9}dialog::backdrop{background:#1f101bb8;backdrop-filter:blur(5px)}
+#words{width:min(86vw,980px);max-height:90vh;border-radius:14px;background:linear-gradient(145deg,#fffaf2,#f1e1d4)}
+#words .modal-head{padding:24px 32px 18px}#words .modal-head h2{font-size:1.55rem;letter-spacing:.12em}
+#words .modal-body{padding:26px 38px 34px;max-height:76vh}
+#words .word-modes{gap:12px;margin-bottom:26px}#words .word-mode{padding:13px 10px;font-size:.95rem;border-radius:10px}
+#words .word-progress{font-size:.9rem}#words .word-term{font-size:2.8rem;margin:24px 0 10px}#words .word-hint{font-size:1rem;margin-bottom:24px}
+#words .word-options{grid-template-columns:repeat(3,1fr);gap:14px}#words .word-option{min-height:74px;padding:18px;font-size:1.08rem}
+#words .word-feedback{min-height:38px;margin:20px 0 8px;font-size:1.05rem}#words .mini{max-width:260px;padding:12px 24px;font-size:1rem}
+#words .memory-card{grid-column:1/-1;min-height:330px;padding:45px}#words .memory-card .front{font-size:3.2rem}#words .memory-card .back{font-size:2rem}
+#words .spell-line{grid-column:1/-1;min-height:180px;gap:7px;padding:35px 20px}#words .spell-char,#words .spell-input{width:42px;height:52px;font-size:1.45rem}#words .spell-input{width:44px}
+.modal-head{padding:20px 20px 14px;border-bottom:1px solid #ead5c5;display:flex;justify-content:space-between;align-items:center}.modal-head h2{font-size:1.15rem;margin:0;color:var(--wine)}.close{border:0;background:transparent;font-size:1.3rem;cursor:pointer}.modal-body{padding:18px 20px 24px;overflow:auto;max-height:68vh}
+.slot{border:1px solid #dfc7b6;border-radius:13px;padding:13px;margin-bottom:10px;background:#fff}.slot b{color:var(--wine)}.slot p{font-size:.75rem;color:#8c7378}.slot-actions{display:flex;gap:8px}.mini{flex:1;border:1px solid #c9929f;background:#f8e6e7;color:#6e4050;border-radius:10px;padding:8px;cursor:pointer}
+.ach{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #eadbd0}.badge{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:#ead6d7;color:#7c4654;font-size:1.2rem}.ach.locked{filter:grayscale(1);opacity:.48}.ach b{font-size:.9rem}.ach p{margin:4px 0;font-size:.72rem;color:#92777c}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}.cg{aspect-ratio:4/3;border-radius:12px;overflow:hidden;position:relative;background:#dac9c7}.cg img{width:100%;height:100%;object-fit:cover}.cg.locked img{filter:brightness(.16) blur(3px)}.cg.locked:after{content:"🔒";position:absolute;inset:0;display:grid;place-items:center;font-size:1.5rem}.cg span{position:absolute;left:0;right:0;bottom:0;padding:7px;background:#2b1725b8;color:#fff;font-size:.68rem}
+.name-screen{position:absolute;inset:0;z-index:30;display:grid;place-items:center;background:linear-gradient(#f3d9ddf2,#5b364bf5);padding:25px}.name-card{width:100%;background:#fff9f2;border:1px solid #efd1ba;border-radius:26px;padding:28px;text-align:center;box-shadow:0 25px 70px #37162a99}.name-card h1{color:var(--wine);font-size:1.55rem;margin:0 0 6px}.name-card p{color:#8a7077;font-size:.82rem;line-height:1.6}.name-card input{width:100%;border:0;border-bottom:1px solid #bd8390;background:transparent;padding:12px;text-align:center;font-size:1.1rem;outline:none;margin:12px 0 22px}.start{width:100%;border:0;border-radius:20px;background:linear-gradient(90deg,#713a4d,#b46679);color:white;padding:13px;cursor:pointer}
+@media(min-width:700px){.phone{margin:22px auto;height:min(900px,calc(100vh - 44px));border:8px solid #211820;border-radius:38px}.phone:after{content:"";position:absolute;inset:0;border-radius:28px;box-shadow:inset 0 0 0 1px #ffffff22;pointer-events:none;z-index:40}}
+/* Desktop field-training layout */
+body{background:#171c1b}
+.phone{width:min(1440px,100vw);height:min(900px,100vh);min-height:720px;margin:auto;border:0;border-radius:0;background:#111817}
+.top{top:0;bottom:0;right:auto;width:245px;display:block;padding:34px 24px;background:linear-gradient(180deg,#182421f2,#241b22f2);border-right:1px solid #aa8863}
+.portrait{width:92px;height:92px;display:block;margin:0 auto 16px}.profile{text-align:center}.profile b{font-size:1.05rem}.rank{font-size:.75rem;margin-top:7px}
+.love{width:100%;height:9px;margin-top:12px}.heart{display:block;margin:8px 0 0;color:#e2c79d}.tools{margin:28px 0 0;display:grid;grid-template-columns:1fr;gap:10px}
+.icon{width:100%;height:auto;border-radius:8px;padding:11px}.icon:nth-child(1):after{content:"  存讀檔"}.icon:nth-child(2):after{content:"  實戰成就"}.icon:nth-child(3):after{content:"  事件圖鑑"}
+.icon:nth-child(4):after{content:"  原創配樂"}.icon.playing{background:#76533f;border-color:#e2c79d;color:white}
+.icon:nth-child(5):after{content:"  章節目錄"}
+.icon:nth-child(6):after{content:"  單字練習"}
+.scene{left:245px;width:calc(100% - 245px)}.wash{left:245px}.chapter{top:26px;right:34px;font-size:.78rem}
+.sprite{left:300px;right:42px;top:8%;height:64%;justify-content:flex-end}.sprite img{height:100%;max-width:45%;border-radius:14px;mask-image:linear-gradient(#000 76%,transparent 100%)}
+.dialogue{left:295px;right:48px;bottom:38px}.box{min-height:155px;padding:24px 28px}.text{font-size:1.08rem;min-height:77px}.nameplate{font-size:1rem}
+.choices{grid-template-columns:repeat(3,1fr);gap:12px}.choice{width:100%;max-width:none;border-radius:8px;text-align:left;padding:14px}.choice small{text-align:left}
+.petal{display:none}.toast{top:36px}.name-screen{left:245px;background:linear-gradient(120deg,#dfd0bded,#354943ed)}.name-card{max-width:520px;border-radius:10px}.name-card h1{color:#475d55}
+@media(max-width:900px){.phone{min-width:900px}.dialogue{right:30px}.choices{grid-template-columns:1fr}.sprite img{max-width:55%}}
+@media(max-width:700px){
+ body{overflow:hidden}.phone{width:100vw;height:100dvh;min-width:0;min-height:0;margin:0;border:0}
+ .top{left:0;right:0;top:0;bottom:auto;width:100%;height:102px;padding:10px 12px;display:flex;align-items:center;gap:10px;border-right:0;border-bottom:1px solid #aa8863;z-index:12}
+ .portrait{width:54px;height:54px;margin:0;flex:0 0 auto}.profile{text-align:left;min-width:112px}.profile b{font-size:.82rem}.rank{font-size:.61rem;margin-top:2px}.love{width:108px;height:6px;margin-top:5px}.heart{font-size:.61rem;margin-top:3px}
+ .tools{margin:0 0 0 auto;display:grid;grid-template-columns:repeat(3,34px);gap:5px}.icon{width:34px;height:34px;padding:0;border-radius:7px;font-size:.78rem}.icon:after{display:none!important}
+ .scene,.wash{left:0;width:100%}.scene{top:102px;height:calc(100% - 102px);object-position:center}.chapter{top:110px;right:10px;font-size:.58rem;max-width:55%;text-align:right}
+ .sprite{left:0;right:0;top:17%;height:47%;justify-content:center}.sprite img{max-width:78%;height:100%;object-position:center top}
+ .dialogue{left:9px;right:9px;bottom:9px}.box{min-height:145px;padding:16px 15px 12px;border-radius:0 12px 12px 12px}.text{font-size:.9rem;line-height:1.65;min-height:68px}.nameplate{font-size:.78rem;padding:6px 15px}.choices{grid-template-columns:1fr;gap:7px;max-height:40dvh;overflow:auto}.choice{padding:10px 12px;font-size:.83rem}.choice small{font-size:.61rem}.page-back,.chapter-return{padding:6px 9px;font-size:.72rem}
+ .name-screen{left:0;padding:18px}.name-card{padding:24px 20px}.summary-screen,.exam-screen{inset:102px 0 0 0;padding:10px}.summary-panel{width:100%;max-height:calc(100dvh - 122px);padding:26px 20px 22px}.summary-title{font-size:1.25rem}.summary-arts{grid-template-columns:1fr 1fr}.summary-arts figure{height:90px}.summary-copy{font-size:.82rem;line-height:1.7}.culture-grid,.culture-requirements,.training-grid{grid-template-columns:1fr}.training-card.wide{grid-column:auto}.practice-flow{overflow-x:auto}.culture-card{min-height:0}
+ dialog,#words{width:96vw;max-height:88dvh}.modal-body,#words .modal-body{padding:16px;max-height:72dvh}#words .modal-head{padding:17px}#words .modal-head h2{font-size:1.08rem}#words .word-options{grid-template-columns:1fr}#words .word-term{font-size:2rem}#words .memory-card{min-height:230px}#words .memory-card .front{font-size:2.2rem}#words .spell-line{min-height:130px;padding:20px 8px}#words .spell-char,#words .spell-input{width:30px;height:42px;font-size:1.05rem}
+ .exam-panel{width:94%;padding:24px 16px}.exam-question{font-size:2rem}.exam-options{grid-template-columns:1fr;gap:8px}.exam-option{min-height:50px;padding:10px;font-size:.9rem}.exam-head{margin-bottom:10px}.exam-timer{font-size:1.5rem}.exam-track{margin-bottom:16px}
+}
+</style>
 </head>
-
 <body>
+<main class="phone">
+  <img class="scene" id="scene" src="./迎正神｜女巫實戰訓練_files/tjuacaq-maljeveq-wide.png" alt="Tjuaqau（土坂部落）Maljeveq（五年祭）祭場全景">
+  <div class="wash"></div><i class="petal"></i><i class="petal p2"></i><i class="petal p3"></i><i class="petal p4"></i>
+  <header class="top">
+    <img class="portrait" src="./迎正神｜女巫實戰訓練_files/samiling-half-side.png" alt="Samiling 半身側面祭儀服飾頭像">
+    <div class="profile"><b><span id="profileName">實習巫師</span><span class="heart">穩定度 <span id="loveNum">20</span></span></b><div class="rank">28 歲女性新進 pulingaw（靈媒）· 實戰中</div><div class="love"><i id="loveBar" style="width: 20%;"></i></div></div>
+    <div class="tools"><button class="icon" title="存檔" onclick="openSave()">▣</button><button class="icon" title="成就" onclick="openModal(&#39;achieve&#39;)">◆</button><button class="icon" title="事件圖鑑" onclick="openGallery()">◇</button><button class="icon" id="musicBtn" title="音樂開關" onclick="toggleMusic()">♪</button><button class="icon" title="章節目錄" onclick="openChapters()">目</button><button class="icon" title="單字練習" onclick="openWords()">字</button></div>
+  </header>
+  <div class="chapter" id="chapter">10月25日 · 迎正神</div>
+  <section class="sprite"><img id="sprite" src="./迎正神｜女巫實戰訓練_files/samiling-half-side.png" alt="Samiling 半身側面祭儀服飾立繪"></section>
+  <section class="dialogue" id="storyDialogue"><div id="choices" class="choices"></div><div class="nameplate" id="speaker">Samiling</div><div class="box"><div class="text" id="text"></div><div class="page-nav"><button class="page-back" id="pageBack" onclick="previous()">← 上一頁</button><button class="chapter-return" id="chapterReturn" onclick="openChapters()" hidden="">↩ 返回目錄</button></div><button class="next" id="next" onclick="next()">◆</button></div></section>
+  <section class="summary-screen" id="summaryScreen"><article class="summary-panel"><div class="summary-seal">◆</div><div class="summary-kicker" id="summaryKicker">CHAPTER RECORD</div><h2 class="summary-title" id="summaryTitle"></h2><div class="summary-ornament">✦</div><div class="summary-arts" id="summaryArts"></div><div class="summary-copy" id="summaryCopy"></div><div class="summary-actions"><button onclick="previous()">← 上一頁</button><button onclick="openChapters()">返回章節目錄</button><button class="continue" onclick="next()">繼續故事 →</button></div></article></section>
+  <div class="toast" id="toast"></div>
+  <section class="name-screen" id="nameScreen"><div class="name-card"><div style="font-size:2rem">◆</div><h1>迎正神｜女巫實戰訓練</h1><p>你是一名 28 歲的女性新進 pulingaw（靈媒）。10月25日，Tjuaqau（土坂部落）的 Maljeveq（五年祭）進入能量最強的時刻；這是你的第一次正式現場實戰。</p><input id="nameInput" maxlength="12" placeholder="輸入女主角姓名"><button class="start" onclick="startGame()">開始實戰</button></div></section>
+</main>
 
-  <iframe
-    src="https://tribal-learning-home.a0976207237.chatgpt.site"
-    title="部落課輔班網站"
-    allowfullscreen>
-  </iframe>
+<dialog id="save"><div class="modal-head"><h2>記憶存檔</h2><button class="close" onclick="save.close()">×</button></div><div class="modal-body" id="slots"></div></dialog>
+<dialog id="achieve"><div class="modal-head"><h2>實戰成就</h2><button class="close" onclick="achieve.close()">×</button></div><div class="modal-body" id="achList"></div></dialog>
+<dialog id="gallery"><div class="modal-head"><h2>事件圖鑑</h2><button class="close" onclick="gallery.close()">×</button></div><div class="modal-body"><div class="gallery" id="cgList"></div></div></dialog>
+<dialog id="chapters"><div class="modal-head"><h2>故事章節目錄</h2><button class="close" onclick="chapters.close()">×</button></div><div class="modal-body"><p class="chapter-note">選擇章節後會保留姓名、穩定度、成就及 CG 收藏。</p><div class="chapter-list"><button class="chapter-card" onclick="goChapter(0)"><b>第一章｜迎正神</b><small>靈力爆發、首席巫師變聲，以及靈媒資格與傳承補充。</small></button><button class="chapter-card" onclick="goChapter(14)"><b>第二章｜五位祖靈</b><small>祖靈顯現、身心反應，以及經語與靈媒訓練補充。</small></button><button class="chapter-card" onclick="goChapter(22)"><b>第三章｜空無一人的熱鬧祭場</b><small>三次往返、雙向靈界屏蔽，以及三方證詞的交叉確認。</small></button></div></div></dialog>
+<dialog id="words"><div class="modal-head"><h2>排灣族語單字練習</h2><button class="close" onclick="words.close()">×</button></div><div class="modal-body"><div class="word-modes"><button class="word-mode" data-mode="choice" onclick="setWordMode(&#39;choice&#39;)">中文選擇</button><button class="word-mode" data-mode="memory" onclick="setWordMode(&#39;memory&#39;)">記憶力</button><button class="word-mode" data-mode="spelling" onclick="setWordMode(&#39;spelling&#39;)">拼字</button></div><div class="word-stage"><div class="word-progress" id="wordProgress"></div><div class="word-term" id="wordTerm"></div><div class="word-hint" id="wordHint"></div><div class="word-options" id="wordOptions"></div><div class="word-feedback" id="wordFeedback"></div><button class="mini" id="wordNext" onclick="nextPractice()" hidden="">下一題</button></div></div></dialog>
+<section class="exam-screen" id="examScreen" aria-live="polite"><div class="exam-panel"><div class="exam-kicker">FINAL VOCABULARY TRIAL</div><div id="examBody"></div></div></section>
 
-</body>
-</html>
+<script>
+const D=[
+ {c:"10月25日 · 迎正神",s:"Samiling",t:"{name}，站到我後面。首席 pulingaw（靈媒）領頭，我是第三位。無論感覺到什麼，都先穩住呼吸。",bg:"arenaWide",unlock:"cg4",m:"calm"},
+ {s:"我",t:"Tjuaqau（土坂部落）的巫師群依職級排開。空氣悶熱得像暴雨前夕，所有人都在等待首席巫師迎接太陽神與帶來好運的高階神靈。",ch:[
+  ["向 Samiling 點頭","我會跟著妳的節奏，不擅自行動。",8,"gentle"],
+  ["確認後方實習巫師的位置","如果有人倒下，我會先接住他們。",6,"care"],
+  ["掩飾自己的緊張","我沒事，不需要任何提醒。",-4,"doubt"]]},
+ {c:"靈力爆發 · 生理極限",s:"系統",t:"首席巫師開始念誦經文。祭儀內容不在畫面中呈現；你只感覺到空間驟然變重，頭骨內側傳來強烈壓迫。",bg:"arenaClose",unlock:"cg5",m:"pressure"},
+ {s:"我",t:"前排的實習巫師接連失去力氣。有人向旁人倒下，有人抱著劇痛的頭蹲在地上，眼淚完全不受控制。",ch:[
+  ["先接住倒下者","我壓低重心，把倒下的人安全交給後方照顧。",8,"rescue"],
+  ["留在 Samiling 身側","我守住隊列，隨時準備支援她。",6,"guard"],
+  ["忍痛硬撐，不理會旁人","我不能成為最先倒下的那一個。",-8,"cold"]]},
+ {s:"Samiling",t:"不要和那股力量對抗。承認它很重，再決定自己還能做什麼。看著我，{name}。"},
+ {s:"我",t:"我照著她的呼吸重新站穩。悶熱與壓迫沒有消失，但我終於不再被恐懼推著走。",unlock:"cg3"},
+ {c:"核心異象 · 關鍵的變聲瞬間",s:"Samiling",t:"等等……那不是首席原本的聲音。唱誦的內容也不是平時教導的神靈之歌。祂正在透過首席的身體說話。",unlock:"cg6",m:"alert"},
+ {s:"我",t:"Samiling 與另一位巫師幾乎同時察覺異常。陌生的嗓音持續發言，首席巫師的身體卻仍勉強維持站立；整個隊列立刻進入最高警戒。"},
+ {s:"Samiling",t:"注意他的肩膀和呼吸。如果體力撐不住，或神識回不來，我們必須立刻上前夾住他，不能讓祭儀中斷。",ch:[
+  ["守住後方支援位置","我穩住隊列，讓前位巫師能在需要時立即接手。",10,"trust"],
+  ["持續觀察首席呼吸","他的呼吸還有節奏。我回報狀態，不擅自介入。",5,"evidence"],
+  ["未經指示搶先上前","不能再等了，我現在就去拉住首席巫師。",-10,"reckless"]]},
+ {c:"意志力的支撐與回歸",s:"系統",t:"首席巫師沒有像新進巫師一樣倒下或崩潰。他憑藉強韌定力，強行將神識帶回，堅持把整段關鍵唱誦完成。",bg:"arenaWide",unlock:"cg7",m:"relief"},
+ {s:"我",t:"最後一個音節落下，首席巫師的聲音終於恢復正常。籠罩祭場的緊繃感稍微鬆開，巫師群重新確認彼此狀態，準備前往下一個場地。"},
+ {c:"祭儀回歸 · 前往下一場地",s:"Samiling",t:"你沒有倒下，也沒有為了證明自己而破壞隊列。接下來還有刺球等儀式……你能繼續執勤嗎？",ch:[
+  ["回報自己的身體狀況","頭痛已經緩解，呼吸與步伐都能維持。",12,"report"],
+  ["要求繼續跟隨觀察","我能繼續，但會留在妳指定的位置。",8,"stay"],
+  ["自行走到隊伍前方","我已經通過考驗，可以改站前排。",-12,"depart"]]},
+ {c:"第一章補充｜成為靈媒的要件",s:"文化補充",t:"<strong>基本要件</strong>　傳統上，成為靈媒大致包含女性、具有家學淵源，以及通過儀禮三項條件。傳承原則以同系之人為主，並盡可能維持在母系範圍內；老靈媒不能任意指定徒弟，仍須等待神兆指引。<br><br><strong>師徒相授</strong>　族人相信神靈會安排適任者，因此靈媒不主動尋找徒弟。願意學習者仍需憑文化認同、誠心與毅力接受長期考驗。<br><strong>世襲傳授</strong>　具有家傳、近親祖先曾為靈媒，或出自貴族體系者，可能具備 katje luqeman（先天靈力），較容易接受來自 i vavau（上面／神靈間）、i kacauwan（人間）與 i sangas（前方）的 semaugeseg（指引）。<br><strong>神靈授予</strong>　內在徵兆包括 luqem（神力／靈力）、puqenetjan（慧根）、kemauvaudjan（被揀選之人）、記憶力與口才；外在則以 zaqu（靈珠）為重要徵兆。最終仍須獲得神靈認可並通過儀禮，才算真正承接 pulingaw（靈媒）的職責。",bg:"arenaWide",full:true,summary:true,supplement:true,arts:["assets/paiwan-elements/占卜刀.png","assets/paiwan-elements/占卜盒.jpg","assets/paiwan-elements/珠繡.png"],artLabels:["占卜刀","占卜盒","珠繡"]},
+ {c:"第一章總結｜迎正神",s:"篇章故事概述",t:"<b>第一章｜迎正神</b><br>10月25日，Tjuaqau（土坂部落）的 Maljeveq（五年祭）進入能量最強的迎正神階段。你以28歲新進 pulingaw（靈媒）的身分站入巫師隊列，在首席巫師召請高階神靈時，親身承受驟增的悶熱、頭痛與壓迫。前排實習巫師陸續倒下或失控哭泣，你必須在自身極限與隊列職責之間作出判斷。祭儀核心，首席巫師突然發出不屬於自己的嗓音，唱誦內容也隨之改變；其他巫師立即準備在他體力不支時接手。最後，首席巫師憑意志力完成整段唱誦並恢復原聲，而你也在沒有擅自破壞祭序的情況下完成第一次迎正神實戰。",bg:"arenaWide",full:true,chapterEnd:true,summary:true,arts:["assets/tjuacaq-maljeveq-wide.png","assets/samiling-pressure.png","assets/samiling-relief.png"]},
+ {c:"第二章 · 返回包家頭目族靈屋",s:"系統",t:"迎正神儀式告一段落，五位靈媒返回包家頭目族靈屋休息。離開祭場後，殘留的壓迫感並未消失。",bg:"baoHouse",unlock:"cg8",full:true},
+ {s:"我",t:"一踏進祖靈屋，我的頭部突然像石頭一樣僵硬。劇痛從太陽穴向後腦擴散，膝蓋失去力氣，我跪倒在地，雙手緊緊抱住頭。",bg:"baoPain",unlock:"cg9",full:true,ch:[
+  ["立即回報身體狀況","我說出頭痛、悶熱與壓迫感，請前輩協助判斷。",10,"reportPain"],
+  ["要求同伴維持安全距離","我還能說話，先請大家不要突然碰觸我。",5,"safeSpace"],
+  ["咬牙隱瞞痛苦","我不想被判定無法承受，決定什麼都不說。",-10,"hidePain"]]},
+ {c:"祖靈集體顯現",s:"我",t:"疼痛最劇烈時，我的視線只能貼著祖靈屋的石板地面。五組赤足與傳統長衣的衣襬出現在前方，停成一道淺弧，腳尖全朝向跪在地上的我；除此之外，我看不見任何身體或面容。",bg:"ancestors",unlock:"cg11",full:true},
+ {s:"我",t:"五位族靈沉默地面對著我，衣襬與赤足帶著淡金色微光。我無法只憑腳步與衣襬確認她們的身分，也不擅自替任何一位命名；但那股正注視著我的存在感，仍讓整個祖靈屋沉了下來。",full:true},
+ {s:"Samiling",t:"這一屆由新任頭目與新任首席巫師第一次接手 Maljeveq（五年祭）。祖靈可能擔心後輩經驗不足，才下來守護並幫忙穩定能量。不要追，也不要替看不清的人命名。",full:true},
+ {c:"無法停止的眼淚",s:"我",t:"五位身影離開後，壓迫感轉成無法控制的哭泣。眼淚不停流下，肩膀劇烈顫抖；我明明清醒，身體卻完全不聽使喚。",bg:"baoCry",unlock:"cg10",full:true,ch:[
+  ["接受年長靈媒安撫","我讓前輩扶住肩背，跟著她的聲音慢慢調整呼吸。",12,"acceptHelp"],
+  ["主動描述所見與感受","我逐一說出五位身影、疼痛位置與哭泣反應。",8,"document"],
+  ["推開所有人獨自承受","這是我的考驗，不准任何人靠近。",-12,"isolate"]]},
+ {c:"第二章補充｜經語與靈媒訓練",s:"文化補充",t:"靈媒的經語、祭歌、師徒訓練與祭儀實作。",bg:"baoHouse",full:true,summary:true,supplement:"training",arts:["assets/paiwan-elements/神聖陶壺.png","assets/paiwan-elements/雙人祭儀圖.jpg","assets/paiwan-elements/珠繡.png"],artLabels:["神聖陶壺","雙人祭儀圖","珠繡"]},
+ {c:"第二章總結｜五位祖靈",s:"篇章故事概述",t:"<b>第二章｜五位祖靈</b><br>迎正神告一段落後，五位靈媒回到包家頭目族靈屋休息；祭場殘留的能量卻跟著你進入屋內。劇烈頭痛使你跪倒抱頭，壓迫感隨後轉成無法控制的哭泣。視線貼近石板地面時，你只看見五組帶著淡金微光的赤足與傳統衣襬停在前方，五位族靈全都面向跪地的你，所有身體與面容仍在視野之外。你無法僅憑腳步確認她們的身分，因此選擇記錄親眼所見，不替任何祖靈擅自命名。前輩將這次顯現解讀為祖靈對新任頭目、首席巫師與後輩的關心和守護；五位靈媒則先確認彼此的意識、呼吸及行動能力，讓身體反應、安全照護與文化解讀都被完整保存。",bg:"baoHouse",full:true,chapterEnd:true,summary:true,arts:["assets/bao-ancestral-house.png","assets/scene-ancestors-facing-protagonist.png","assets/chapter2-crying.png"]},
+ {c:"第三章 · 空無一人的熱鬧祭場",s:"系統",t:"儀式結束後，四位 pulingaw（靈媒）留在 tjekel（祖靈屋）旁的祭壇收束現場。首席巫師短暫前往頭目家的廚房與廁所；她回來時，祭場明明仍充滿歌聲與人聲，祭壇在她眼中卻空無一人。",bg:"cloaking",unlock:"cg12",full:true},
+ {s:"首席巫師",t:"我先到族靈屋，再到祭壇，又跑去金針山對面的小米祭壇——都沒有人。我在祭壇、族靈屋與廁所之間往返三次，始終看不見她們。",full:true,ch:[
+  ["停下來詢問刺球準備人員","先留下路線、時間與第三方目擊證詞。",10,"verifyWitness"],
+  ["不問任何人，繼續找第四次","可能錯過能交叉確認現場的旁觀者。",-8,"loopAgain"],
+  ["擅自跨入祭壇結界尋找","未經指示進入儀式核心，可能干擾祭序。",-12,"crossBoundary"]]},
+ {s:"刺球準備人員",t:"妳一直繞圈在做什麼？——巫師們去哪裡了？她們就在祭壇啊！",full:true},
+ {s:"系統",t:"男人們指向空蕩的祭壇。首席巫師看過去仍然一無所有；另一方面，留在祭壇旁的四位靈媒也完全沒有感應到首席巫師三度從身旁經過。這不是單向的忽略，而是彼此都被祭儀能量「屏」住。",full:true},
+ {c:"第三章 · 回到族靈屋",s:"Samiling",t:"儀式後回到族靈屋，我們把每個人的時間、路線與所見逐一對照。妳要怎麼記錄這件事？",bg:"baoHouse",full:true,ch:[
+  ["並列三方證詞與三次往返","保留首席巫師、祭壇靈媒與刺球準備人員的不同感知。",12,"triangulate"],
+  ["斷定首席巫師只是產生幻覺","忽略多人證詞與雙向無感的現象。",-8,"dismiss"],
+  ["直接宣稱是某位祖靈所為","把可能的文化解讀誤寫成已證實原因。",-6,"overclaim"]]},
+ {c:"第三章總結｜雙向屏蔽",s:"篇章故事概述",t:"<b>第三章｜空無一人的熱鬧祭場</b><br>儀式結束後，四位 pulingaw（靈媒）留在 tjekel（祖靈屋）旁的祭壇收束現場，首席巫師則短暫前往頭目家的廚房與廁所。當首席巫師返回時，明明聽得見熱鬧祭聲，眼中的祭壇與族靈屋卻空無一人。她在祭壇、族靈屋和廁所之間往返三次，又前往小米祭壇尋找，始終無法看見同伴。刺球準備人員卻一直看著首席巫師繞圈，並指出四位靈媒就在祭壇；另一方面，留在祭壇旁的四位靈媒也完全沒有感應到首席巫師三度經過。眾人回到族靈屋比對時間、路線與三方證詞，確認這是一場彼此都無法感知對方的雙向屏蔽。靈媒群將其解讀為神聖時間與空間中的祭儀能量作用，同時清楚區分親歷證詞與尚未證實的原因。",full:true,chapterEnd:true,summary:true,arts:["assets/chapter3-cloaking.png","assets/cloaking-seeker.png","assets/bao-ancestral-house.png"]},
+ {c:"FINAL · 現場評核",s:"Samiling",t:"你經歷的不只是看見祖靈，而是一場身心極度負荷的實戰。下一次 Maljeveq（五年祭），你認為自己能承擔更前面的職責嗎？",m:"calm"},
+ {s:"我",t:"這不是鼓勵，也不是責備，而是一次必須誠實回答的現場評核。",ch:[
+  ["接受長期訓練","我願意繼續學習，五年後再由前輩判斷我的位置。",15,"certify"],
+  ["只確認本次任務","我先完成今天的全部工作，再整理身心反應與失誤。",10,"review"],
+  ["拒絕後續訓練","這股力量超過我的承受範圍，我選擇退出。",-15,"leave"]]},
+ {c:"FINAL · 限時單字考試",s:"系統",t:"現場評核尚未結束。接下來直接進入排灣族語單字考試：每題只有7秒。",exam:true},
+ {s:"系統",t:"故事抵達目前版本的終點。你的選擇已寫進命運紀錄。",end:true}
+];
+const CG=[
+ ["cg1","女性主角半身側面人像","assets/samiling-half-side.png"],
+ ["cg2","五年祭場地全景","assets/tjuacaq-maljeveq-wide.png"],
+ ["cg3","迎正神祭場近景","assets/tjuacaq-maljeveq-close.png"],
+ ["cg4","冷靜指導","assets/samiling-calm.png"],
+ ["cg5","承受靈力壓迫","assets/samiling-pressure.png"],
+ ["cg6","變聲警戒","assets/samiling-alert.png"],
+ ["cg7","祭儀後恢復","assets/samiling-relief.png"],
+ ["cg8","包家頭目族靈屋","assets/bao-ancestral-house.png"],
+ ["cg9","跪地抱頭","assets/chapter2-kneeling-pain.png"],
+ ["cg10","淚流不止","assets/chapter2-crying.png"],
+ ["cg11","祖靈下凡｜五位族靈面向主角","assets/scene-ancestors-facing-protagonist.png"],
+ ["cg12","空無一人的熱鬧祭場","assets/chapter3-cloaking.png"],
+ ["cg13","首席巫師｜屏蔽事件","assets/cloaking-seeker.png"],
+ ["culture1","排灣文化元素｜占卜刀","assets/paiwan-elements/占卜刀.png"],
+ ["culture2","排灣文化元素｜占卜盒","assets/paiwan-elements/占卜盒.jpg"],
+ ["culture3","排灣文化元素｜神聖陶壺","assets/paiwan-elements/神聖陶壺.png"],
+ ["culture4","排灣文化元素｜珠繡","assets/paiwan-elements/珠繡.png"],
+ ["culture5","排灣文化元素｜雙人祭儀圖","assets/paiwan-elements/雙人祭儀圖.jpg"]
+];
+const ACH=[
+ ["meet","進入隊列","以新進 pulingaw（靈媒）身分參與迎正神","✦"],
+ ["soft","守住彼此","尊重隊列與 Samiling 的提醒","❦"],
+ ["detective","沒有搶先的勇氣","在變聲時相信專業判斷","◇"],
+ ["bond","穩定承受","精神穩定度達到 60","●"],
+ ["vision","五位守望","完成祖靈集體顯現段落","✧"],
+ ["release","允許身體反應","在淚流不止時接受協助","◉"],
+ ["cloaking","雙向屏蔽","完成空無祭場的靈界屏蔽事件","◉"],
+ ["triangulate","三方證詞","比對首席巫師、祭壇靈媒與刺球準備人員的證詞","△"],
+ ["destiny","進階資格","接受長期訓練且穩定度達到 75","▲"]
+];
+const WORDS=[
+ ["pulingaw","靈媒／巫師"],["Maljeveq","五年祭"],["tjekel","祖靈屋"],["luqem","神力／靈力"],["katje luqeman","具有先天靈力"],["zaqu","靈珠"],["puqenetjan","慧根"],["kemauvaudjan","被揀選之人"],["semaugeseg","指引"],["i vavau","上面／神靈間"],["i kacauwan","人間"],["i sangas","前方"],["tjaucikel","口述傳說"],["milimilingan","神話故事"],["lada","經語"],["kakudanan","文化習俗"],["pucevulj","迎祖靈"],["djemuljat","刺福球"],["pakisuwai","娛靈刺球活動"],["pusau ta qaqetitan／kavuvuan","送祖靈"]
+];
+let W={order:[],pos:0,score:0,locked:false};
+let EX={active:false,order:[],pos:0,score:0,locked:false,deadline:0},examTimer,examBeatTimer;
+let G={name:"實習巫師",i:0,love:20,ach:["meet"],cg:["cg1","cg2","culture1","culture2","culture3","culture4","culture5"],flags:[],trail:[]};
+function startGame(){const v=document.getElementById("nameInput").value.trim();G.name=v||"實習巫師";document.getElementById("profileName").textContent=G.name;document.getElementById("nameScreen").style.display="none";unlock("meet");startMusic();render()}
+function cultureNoteHTML(){return `<div class="culture-layout"><section><div class="culture-heading">成為靈媒的三項要件</div><div class="culture-requirements"><div class="req-chip"><i>01</i>女性</div><div class="req-chip"><i>02</i>具有家學淵源</div><div class="req-chip"><i>03</i>通過儀禮</div></div></section><section class="culture-principle"><div class="culture-heading">傳承原則</div>以同系之人為主，並盡可能維持在母系範圍內。老靈媒不能任意指定徒弟，仍須等待神兆指引。</section><div class="culture-grid"><article class="culture-card"><h3><span class="num">1</span>師徒相授</h3><p>族人相信神靈會安排適任者，因此靈媒不主動尋找徒弟。願意學習者仍需憑文化認同、誠心與毅力接受長期考驗。</p></article><article class="culture-card"><h3><span class="num">2</span>世襲傳授</h3><p>具有家傳、近親祖先曾為靈媒，或出自貴族體系者，可能具備 <span class="term">katje luqeman（先天靈力）</span>，並較容易接受來自 <span class="term">i vavau（上面／神靈間）</span>、<span class="term">i kacauwan（人間）</span> 與 <span class="term">i sangas（前方）</span> 的 <span class="term">semaugeseg（指引）</span>。</p></article><article class="culture-card"><h3><span class="num">3</span>神靈授予</h3><p>內在徵兆包括 <span class="term">luqem（神力／靈力）</span>、<span class="term">puqenetjan（慧根）</span>、<span class="term">kemauvaudjan（被揀選之人）</span>、記憶力與口才；外在則以 <span class="term">zaqu（靈珠）</span> 為重要徵兆。</p></article></div><div class="culture-conclusion"><b>資格認定</b>　最終仍須獲得神靈認可並通過儀禮，才算真正承接 <span class="term">pulingaw（靈媒）</span> 的職責。</div></div>`}
+function trainingNoteHTML(){return `<div class="culture-layout"><div class="training-grid"><article class="training-card"><h3>經語與祭歌的特性</h3><p>靈媒使用的經語繁複、有序且結構嚴謹，可用於向神靈請益、贖罪及入神等祭儀目的。經文由艱澀的古排灣語構成，與日常溝通族語有明顯差異。</p></article><article class="training-card"><h3>師徒訓練範圍</h3><p>學習內容包含 <span class="term">tjaucikel（口述傳說）</span>、<span class="term">milimilingan（神話故事）</span>、<span class="term">lada（經語）</span>、<span class="term">kakudanan（文化習俗）</span>，以及空間方位、自然法則、地理知識和各類神靈的形象、特徵及職責。</p></article><article class="training-card wide"><h3>消除語障儀式</h3><p>初學者能輕吟基礎經文後，師父會執行消除語障儀式，協助學習者不因古語艱澀而退縮。其目的在排除語言障礙、使經文與祭歌背誦更加順遂；完成後仍須繼續學程。</p></article><article class="training-card wide"><h3>祭儀實作順序</h3><div class="practice-flow"><div class="practice-step"><span class="term">pucevulj</span><br>（迎祖靈）</div><div class="practice-arrow">→</div><div class="practice-step"><span class="term">djemuljat</span><br>（刺福球）</div><div class="practice-arrow">→</div><div class="practice-step"><span class="term">pakisuwai</span><br>（娛靈刺球活動）</div><div class="practice-arrow">→</div><div class="practice-step"><span class="term">pusau ta qaqetitan／kavuvuan</span><br>（送祖靈）</div></div></article></div><div class="culture-conclusion"><b>完整能力</b>　靈媒不只背誦經文，也必須能理解文化、自然、地理、神靈系統與各項祭祀活動。</div></div>`}
+function render(){const d=D[G.i];if(d.exam){startExam();return}if(EX.active)stopExam();const isSummary=!!d.summary;const summary=document.getElementById("summaryScreen");document.getElementById("storyDialogue").style.display=isSummary?"none":"block";summary.classList.toggle("on",isSummary);summary.classList.toggle("supplement",!!d.supplement);if(isSummary){document.getElementById("summaryKicker").textContent=d.supplement?"CULTURAL NOTE":"CHAPTER RECORD";document.getElementById("summaryTitle").textContent=d.c;document.getElementById("summaryCopy").innerHTML=d.supplement==="training"?trainingNoteHTML():d.supplement?cultureNoteHTML():d.t.replaceAll("{name}",`<b>${G.name}</b>`);document.getElementById("summaryArts").innerHTML=(d.arts||[]).map((src,n)=>{const label=d.artLabels?.[n];return `<figure><img src="${src}" alt="${label||`第 ${n+1} 張篇章小插圖`}">${label?`<figcaption>${label}</figcaption>`:""}</figure>`}).join("")}document.getElementById("profileName").textContent=G.name;document.getElementById("speaker").textContent=d.s==="我"?G.name:d.s;document.getElementById("text").innerHTML=d.t.replaceAll("{name}",`<b>${G.name}</b>`);document.getElementById("chapter").textContent=d.c||document.getElementById("chapter").textContent;document.getElementById("next").style.display=d.ch||d.end?"none":"block";document.getElementById("chapterReturn").hidden=!d.chapterEnd;document.getElementById("choices").innerHTML=d.ch?d.ch.map((x,j)=>`<button class="choice" onclick="pick(${j})">${x[0]}<small>${x[1]}</small></button>`).join(""):"";document.getElementById("sprite").style.display=d.full?"none":"block";if(d.bg)setBg(d.bg);if(d.m)setMood(d.m);if(d.unlock){unlockCG(d.unlock);if(d.unlock==="cg11")unlock("vision")}updateLove();if(d.end)finish()}
+function startExam(){if(EX.active)return;EX={active:true,order:[...WORDS.keys()].sort(()=>Math.random()-.5).slice(0,10),pos:0,score:0,locked:false,deadline:0};document.getElementById("storyDialogue").style.display="none";document.getElementById("summaryScreen").classList.remove("on");document.getElementById("examScreen").classList.add("on");document.getElementById("chapter").textContent="FINAL · 限時單字考試";examBeatTimer=setInterval(playExamBeat,600);renderExamQuestion()}
+function renderExamQuestion(){clearInterval(examTimer);EX.locked=false;const idx=EX.order[EX.pos],item=WORDS[idx],wrong=WORDS.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).slice(0,3).map(x=>x[1]),opts=[item[1],...wrong].sort(()=>Math.random()-.5);document.getElementById("examBody").innerHTML=`<div class="exam-head"><b>第 ${EX.pos+1}／${EX.order.length} 題　得分 ${EX.score}</b><span class="exam-timer" id="examSeconds">7.0</span></div><div class="exam-track"><div class="exam-fill" id="examFill"></div></div><div class="exam-question">${item[0]}</div><div class="exam-prompt">在時間結束前選出正確的中文意思</div><div class="exam-options">${opts.map((x,i)=>`<button class="exam-option" onclick="answerExam(${i})" data-value="${encodeURIComponent(x)}">${x}</button>`).join("")}</div><div class="exam-feedback" id="examFeedback"></div>`;EX.deadline=Date.now()+7000;examTimer=setInterval(tickExam,100);tickExam()}
+function tickExam(){if(EX.locked)return;const left=Math.max(0,EX.deadline-Date.now()),sec=(left/1000).toFixed(1);document.getElementById("examSeconds").textContent=sec;document.getElementById("examFill").style.width=(left/70)+"%";if(left<=0)resolveExam(null)}
+function answerExam(i){if(EX.locked)return;resolveExam(document.querySelectorAll(".exam-option")[i])}
+function resolveExam(btn){if(EX.locked)return;EX.locked=true;clearInterval(examTimer);const right=WORDS[EX.order[EX.pos]][1],value=btn?decodeURIComponent(btn.dataset.value):"",ok=value===right;if(ok)EX.score++;document.querySelectorAll(".exam-option").forEach(b=>{b.disabled=true;if(decodeURIComponent(b.dataset.value)===right)b.classList.add("correct")});if(btn&&!ok)btn.classList.add("wrong");document.getElementById("examFeedback").innerHTML=ok?"答對了！":btn?`答錯了，正確答案：<b>${right}</b>`:`時間到！正確答案：<b>${right}</b>`;setTimeout(()=>{EX.pos++;EX.pos<EX.order.length?renderExamQuestion():showExamResult()},900)}
+function showExamResult(){clearInterval(examTimer);clearInterval(examBeatTimer);G.examScore=EX.score;const verdict=EX.score>=9?"優秀｜通過限時考驗":EX.score>=7?"合格｜完成現場考試":EX.score>=5?"待加強｜需要繼續複習":"未通過｜返回單字訓練";document.getElementById("examBody").innerHTML=`<div class="exam-result">限時單字考試完成<strong>${EX.score}／${EX.order.length}</strong>${verdict}</div><button class="exam-finish" onclick="finishExam()">查看最終紀錄</button>`}
+function finishExam(){stopExam();rememberPage();G.i++;render()}
+function stopExam(){clearInterval(examTimer);clearInterval(examBeatTimer);EX.active=false;document.getElementById("examScreen").classList.remove("on")}
+function playExamBeat(){if(!musicOn||!audioCtx)return;const now=audioCtx.currentTime;playDeepDrum(now,.065);playHandDrum(now+.3,.045);playWoodPercussion(now+.45,.035)}
+function openWords(){document.getElementById("words").showModal();setWordMode("choice")}
+function setWordMode(mode){W={mode,order:[...WORDS.keys()].sort(()=>Math.random()-.5),pos:0,score:0,locked:false,flipped:false,missing:[]};document.querySelectorAll(".word-mode").forEach(b=>b.classList.toggle("active",b.dataset.mode===mode));renderPractice()}
+function renderPractice(){if(W.mode==="memory")renderMemory();else if(W.mode==="spelling")renderSpelling();else renderWord()}
+function resetPracticeView(){document.getElementById("wordFeedback").textContent="";document.getElementById("wordNext").hidden=true;W.locked=false}
+function renderWord(){const idx=W.order[W.pos],right=WORDS[idx][1];document.getElementById("wordProgress").textContent=`第 ${W.pos+1}／${WORDS.length} 題　得分 ${W.score}`;document.getElementById("wordTerm").textContent=WORDS[idx][0];document.getElementById("wordHint").textContent="請選擇故事中對應的中文意思";const wrong=WORDS.filter((_,i)=>i!==idx).sort(()=>Math.random()-.5).slice(0,2).map(x=>x[1]);const opts=[right,...wrong].sort(()=>Math.random()-.5);document.getElementById("wordOptions").innerHTML=opts.map(x=>`<button class="word-option" onclick="answerWord(this,'${x.replaceAll("'","\\'")}')">${x}</button>`).join("");resetPracticeView()}
+function answerWord(btn,value){if(W.locked)return;W.locked=true;const right=WORDS[W.order[W.pos]][1],ok=value===right;if(ok)W.score++;document.querySelectorAll(".word-option").forEach(b=>{b.disabled=true;if(b.textContent===right)b.classList.add("correct")});if(!ok)btn.classList.add("wrong");document.getElementById("wordFeedback").innerHTML=ok?"答對了！":"正確答案：<b>"+right+"</b>";showPracticeNext()}
+function renderMemory(){const item=WORDS[W.order[W.pos]];document.getElementById("wordProgress").textContent=`第 ${W.pos+1}／${WORDS.length} 張記憶卡`;document.getElementById("wordTerm").textContent="";document.getElementById("wordHint").textContent="點擊卡片，翻面查看中文解釋";document.getElementById("wordOptions").innerHTML=`<button class="memory-card" onclick="flipMemory(this)"><span class="front">${item[0]}</span></button>`;document.getElementById("wordFeedback").textContent="先在心中回想意思，再翻面確認。";document.getElementById("wordNext").textContent="下一張";document.getElementById("wordNext").hidden=false;W.flipped=false;W.locked=false}
+function flipMemory(card){const item=WORDS[W.order[W.pos]];W.flipped=!W.flipped;card.classList.toggle("flipped",W.flipped);card.innerHTML=W.flipped?`<span class="back">${item[1]}</span>`:`<span class="front">${item[0]}</span>`}
+function renderSpelling(){const word=WORDS[W.order[W.pos]][0],letters=[...word],candidates=letters.map((c,i)=>/[A-Za-z]/.test(c)?i:-1).filter(i=>i>=0),missing=candidates.filter((_,i)=>(i+W.pos)%3===1);while(missing.length<Math.min(2,candidates.length))missing.push(candidates[missing.length]);W.missing=[...new Set(missing)];document.getElementById("wordProgress").textContent=`第 ${W.pos+1}／${WORDS.length} 題　得分 ${W.score}`;document.getElementById("wordTerm").textContent=WORDS[W.order[W.pos]][1];document.getElementById("wordHint").textContent="依照中文提示，填入缺少的字母";document.getElementById("wordOptions").innerHTML=`<div class="spell-line">${letters.map((c,i)=>W.missing.includes(i)?`<input class="spell-input" maxlength="1" data-answer="${c.toLowerCase()}" oninput="moveSpell(this)">`:`<span class="spell-char">${c===" "?"&nbsp;":c}</span>`).join("")}</div>`;document.getElementById("wordFeedback").textContent="";document.getElementById("wordNext").textContent="確認答案";document.getElementById("wordNext").hidden=false;W.locked=false;setTimeout(()=>document.querySelector(".spell-input")?.focus(),0)}
+function moveSpell(el){el.value=el.value.slice(-1);if(el.value)el.nextElementSibling?.matches(".spell-input")&&el.nextElementSibling.focus()}
+function checkSpelling(){const inputs=[...document.querySelectorAll(".spell-input")];let ok=true;inputs.forEach(el=>{const good=el.value.toLowerCase()===el.dataset.answer;el.classList.add(good?"correct":"wrong");el.disabled=true;if(!good)ok=false});if(ok)W.score++;W.locked=true;const word=WORDS[W.order[W.pos]][0];document.getElementById("wordFeedback").innerHTML=ok?"拼字正確！":`正確拼法：<b>${word}</b>`;showPracticeNext()}
+function showPracticeNext(){document.getElementById("wordNext").textContent=W.pos===WORDS.length-1?`完成｜${W.score}／${WORDS.length}`:W.mode==="memory"?"下一張":"下一題";document.getElementById("wordNext").hidden=false}
+function nextPractice(){if(W.mode==="spelling"&&!W.locked){checkSpelling();return}if(W.pos>=WORDS.length-1){document.getElementById("wordFeedback").innerHTML=`練習完成：<span class="word-score">${W.score}／${WORDS.length}</span>`;document.getElementById("wordNext").hidden=true;return}W.pos++;renderPractice()}
+function openChapters(){if(!document.getElementById("nameScreen").style.display)document.getElementById("nameScreen").style.display="none";const dlg=document.getElementById("chapters");if(!dlg.open)dlg.showModal()}
+function goChapter(index){G.i=index;G.trail=[];document.getElementById("chapters").close();render();toast(`前往第${index===0?"一":index===14?"二":"三"}章`)}
+function setMood(mood){const sprites={calm:"assets/samiling-calm.png",pressure:"assets/samiling-pressure.png",alert:"assets/samiling-alert.png",relief:"assets/samiling-relief.png"};const labels={calm:"冷靜指導",pressure:"承受靈力壓迫",alert:"變聲警戒",relief:"祭儀後恢復"};const el=document.getElementById("sprite");el.style.opacity=.15;el.style.transform="translateX(12px)";setTimeout(()=>{el.src=sprites[mood];el.alt=`Samiling：${labels[mood]}`;el.style.opacity=1;el.style.transform="translateX(0)"},180)}
+function rememberPage(){G.trail=G.trail||[];G.trail.push({i:G.i,love:G.love,ach:[...G.ach],cg:[...G.cg],flags:[...G.flags]})}
+function previous(){G.trail=G.trail||[];const old=G.trail.pop();if(old){G.i=old.i;G.love=old.love;G.ach=old.ach;G.cg=old.cg;G.flags=old.flags;render();toast("已返回上一頁")}else if(G.i>0){G.i--;render()}else openChapters()}
+function next(){if(G.i<D.length-1){rememberPage();G.i++;render()}}
+function pick(j){rememberPage();const x=D[G.i].ch[j];G.love=Math.max(0,Math.min(100,G.love+x[2]));G.flags.push(x[3]);if(x[3]==="gentle")unlock("soft");if(x[3]==="trust")unlock("detective");if(x[3]==="acceptHelp")unlock("release");if(x[3]==="verifyWitness")unlockCG("cg13");if(x[3]==="triangulate")unlock("triangulate");toast(`${x[2]>=0?"穩定度 +":"穩定度 "}${x[2]}`);G.i++;render()}
+function finish(){if(G.love>=60)unlock("bond");if(G.flags.includes("certify")&&G.love>=75)unlock("destiny");localStorage.setItem("witchAuto",JSON.stringify(G));document.getElementById("text").innerHTML+=`<br><br><b>${G.love>=75?"實戰結果｜通過，取得進階訓練資格":G.love>=55?"實戰結果｜完成，需持續觀察":G.love>=35?"實戰結果｜待加強，返回基礎訓練":"實戰結果｜中止現場訓練"}</b><br><b>限時單字考試｜${G.examScore??0}／10</b>`}
+function updateLove(){document.getElementById("loveNum").textContent=G.love;document.getElementById("loveBar").style.width=G.love+"%"}
+function setBg(k){const m={arenaWide:"assets/tjuacaq-maljeveq-wide.png",arenaClose:"assets/tjuacaq-maljeveq-close.png",baoHouse:"assets/bao-ancestral-house.png",baoPain:"assets/chapter2-kneeling-pain.png",baoCry:"assets/chapter2-crying.png",ancestors:"assets/scene-ancestors-facing-protagonist.png",cloaking:"assets/chapter3-cloaking.png"};if(k==="arenaClose")unlockCG("cg3");if(k==="cloaking")unlock("cloaking");const labels={arenaWide:"Tjuaqau（土坂部落）Maljeveq（五年祭）祭場全景",arenaClose:"迎正神祭場近景",baoHouse:"包家頭目族靈屋",baoPain:"主角跪地抱頭承受劇烈頭痛",baoCry:"主角淚流不止並接受安撫",ancestors:"祖靈屋內五位身穿排灣服飾的族靈面向跪地主角",cloaking:"首席巫師眼中空無一人的熱鬧祭場"};const el=document.getElementById("scene");el.style.opacity=.2;setTimeout(()=>{el.src=m[k];el.alt=labels[k];el.style.opacity=1},220)}
+function unlock(id){if(!G.ach.includes(id)){G.ach.push(id);toast("成就解鎖 ✦")}}
+function unlockCG(id){if(!G.cg.includes(id)){G.cg.push(id);toast("CG 解鎖 ◇")}}
+function toast(t){const e=document.getElementById("toast");e.textContent=t;e.classList.add("on");clearTimeout(window.tt);window.tt=setTimeout(()=>e.classList.remove("on"),1600)}
+function openModal(id){renderAch();document.getElementById(id).showModal()}
+function renderAch(){document.getElementById("achList").innerHTML=ACH.map(a=>`<div class="ach ${G.ach.includes(a[0])?"":"locked"}"><div class="badge">${a[3]}</div><div><b>${G.ach.includes(a[0])?a[1]:"？？？"}</b><p>${a[2]}</p></div></div>`).join("")}
+function openGallery(){document.getElementById("cgList").innerHTML=CG.map(c=>`<div class="cg ${G.cg.includes(c[0])?"":"locked"}"><img src="${c[2]}" alt="${G.cg.includes(c[0])?c[1]:"未解鎖 CG"}"><span>${G.cg.includes(c[0])?c[1]:"尚未解鎖"}</span></div>`).join("");document.getElementById("gallery").showModal()}
+function openSave(){const dlg=document.getElementById("save");document.getElementById("slots").innerHTML=[1,2,3].map(n=>{let x;try{x=JSON.parse(localStorage.getItem("witchSave"+n))}catch{}return `<div class="slot"><b>實戰紀錄 ${n}</b><p>${x?`${x.name} · 穩定度 ${x.love} · 第 ${x.i+1} 幕`:"空白存檔"}</p><div class="slot-actions"><button class="mini" onclick="saveSlot(${n})">儲存</button><button class="mini" ${x?"":"disabled"} onclick="loadSlot(${n})">讀取</button></div></div>`}).join("");if(!dlg.open)dlg.showModal()}
+function saveSlot(n){localStorage.setItem("witchSave"+n,JSON.stringify(G));toast(`已儲存至記憶 ${n}`);openSave()}
+function loadSlot(n){const x=localStorage.getItem("witchSave"+n);if(!x)return;G=JSON.parse(x);G.trail=G.trail||[];["culture1","culture2","culture3","culture4","culture5"].forEach(id=>{if(!G.cg.includes(id))G.cg.push(id)});document.getElementById("profileName").textContent=G.name;document.getElementById("nameScreen").style.display="none";document.getElementById("save").close();render();toast(`已讀取記憶 ${n}`)}
+const auto=localStorage.getItem("witchAuto");if(auto){try{const a=JSON.parse(auto);document.getElementById("nameInput").value=a.name}catch{}}
+updateLove();
+
+// Original 100 BPM mystical cinematic folk soundscape inspired by mountain and ceremonial atmosphere.
+// It uses evolving synthetic bamboo flute, bowed-string colour, wordless voices, nature, organic percussion and deep drums;
+// no existing Indigenous melody, sacred chant or field recording is reproduced.
+let audioCtx,master,uiBus,musicOn=false,musicTimer,step=0,echoBus,noiseBuffer;
+const FOLK_BEAT=.6,FOLK_PHRASE=FOLK_BEAT*8;
+const FOLK_MELODY=[0,2,3,4,3,2,1,0, 2,3,5,4,3,1,2,3, 4,5,4,2,3,4,2,1, 0,1,3,2,4,3,2,0, 1,2,4,5,4,3,1,2, 3,5,6,5,3,4,2,3, 4,6,5,4,2,3,5,4, 3,2,1,3,2,1,0,0];
+function startMusic(){
+ if(musicOn)return;
+ if(!audioCtx){
+  audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+  master=audioCtx.createGain();master.gain.value=.18;uiBus=audioCtx.createGain();uiBus.gain.value=.11;uiBus.connect(audioCtx.destination);
+  const compressor=audioCtx.createDynamicsCompressor();compressor.threshold.value=-20;compressor.knee.value=18;compressor.ratio.value=4;master.connect(compressor).connect(audioCtx.destination);
+  const delay=audioCtx.createDelay(1.8),feedback=audioCtx.createGain(),echoGain=audioCtx.createGain();delay.delayTime.value=.21;feedback.gain.value=.045;echoGain.gain.value=.045;delay.connect(feedback).connect(delay);delay.connect(echoGain).connect(master);echoBus=delay;
+  noiseBuffer=audioCtx.createBuffer(1,audioCtx.sampleRate*2,audioCtx.sampleRate);const d=noiseBuffer.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=(Math.random()*2-1)*(1-i/d.length);
+  musicOn=true;musicTimer=setInterval(playFolkPhrase,FOLK_PHRASE*1000);playFolkPhrase();
+ }
+ audioCtx.resume();master.gain.cancelScheduledValues(audioCtx.currentTime);master.gain.linearRampToValueAtTime(.18,audioCtx.currentTime+.5);musicOn=true;document.getElementById("musicBtn").classList.add("playing");document.getElementById("musicBtn").firstChild.textContent="♫";
+}
+function playFolkPhrase(){
+ if(!musicOn||!audioCtx)return;
+ const roots=[174.61,196,220,196,174.61,220,196,261.63],ratios=[1,9/8,5/4,4/3,3/2,5/3,2],section=Math.floor(step/8)%4,root=roots[(step+section*3)%roots.length],now=audioCtx.currentTime;
+ const arc=step%32,intensity=arc<23?.16+arc*.035:Math.max(.22,1-(arc-22)*.085),melodyStart=(step*8+section*11)%FOLK_MELODY.length;
+ playWarmDrone(root/2,now,FOLK_PHRASE+.25,.018+.015*intensity);playWarmDrone(root*.75,now+.04,FOLK_PHRASE,.009+.009*intensity);
+ for(let i=0;i<8;i++){let degree=FOLK_MELODY[(melodyStart+i)%FOLK_MELODY.length];if(section===1)degree=(degree+2)%7;if(section===2)degree=6-degree;if(section===3&&i%3===0)degree=(degree+1)%7;const f=root*2*ratios[degree],hold=(i===3||i===7)?FOLK_BEAT*.9:FOLK_BEAT*.62;playWoodFlute(f,now+.1+i*FOLK_BEAT,hold,.026+.025*intensity);if(section>=1&&i%2===0)playBowedString(f/2,now+.08+i*FOLK_BEAT,FOLK_BEAT*(section===3?1.8:1.25),.009+.018*intensity);if(intensity>.56&&i%2===0)playWordlessVoice(f/2,now+.14+i*FOLK_BEAT,FOLK_BEAT*1.65,.01+.016*intensity)}
+ for(let b=0;b<8;b++){const t=now+b*FOLK_BEAT;if(b===0||b===4)playDeepDrum(t,.026+.034*intensity);if(b===2||b===6||intensity>.7&&b%2)playHandDrum(t+.02,.018+.026*intensity);if(intensity>.42&&b%2===1)playWoodPercussion(t+.3,.012+.018*intensity)}
+ if(step%2===1)playNatureRustle(now+1.1);if(section===2)playBowedString(root*.75,now,FOLK_PHRASE,.016+.012*intensity);if(arc===22){playWordlessVoice(root,now+.1,FOLK_PHRASE,.045);playWordlessVoice(root*1.5,now+.15,FOLK_PHRASE,.032);playBowedString(root,now,FOLK_PHRASE,.034)}
+ step++;
+}
+function playWarmDrone(f,when,dur,level){[1,1.5,2].forEach((r,i)=>{const o=audioCtx.createOscillator(),g=audioCtx.createGain(),lp=audioCtx.createBiquadFilter();o.type=i?"sine":"triangle";o.frequency.value=f*r;o.detune.value=i===1?4:-3;lp.type="lowpass";lp.frequency.value=520;g.gain.setValueAtTime(.001,when);g.gain.exponentialRampToValueAtTime(level/(i+1),when+.22);g.gain.exponentialRampToValueAtTime(.001,when+dur);o.connect(lp).connect(g).connect(master);o.start(when);o.stop(when+dur+.05)})}
+function playWoodFlute(f,when,dur,level){const o=audioCtx.createOscillator(),air=audioCtx.createBufferSource(),bp=audioCtx.createBiquadFilter(),g=audioCtx.createGain(),ag=audioCtx.createGain();o.type="sine";o.frequency.setValueAtTime(f,when);o.frequency.linearRampToValueAtTime(f*1.006,when+dur*.45);bp.type="bandpass";bp.frequency.value=f*2;bp.Q.value=2.2;g.gain.setValueAtTime(.001,when);g.gain.linearRampToValueAtTime(level,when+.055);g.gain.exponentialRampToValueAtTime(.001,when+dur);air.buffer=noiseBuffer;ag.gain.value=.006;o.connect(g).connect(master);o.connect(g).connect(echoBus);air.connect(bp).connect(ag).connect(master);o.start(when);air.start(when);o.stop(when+dur+.03);air.stop(when+dur)}
+function playBowedString(f,when,dur,level){const bus=audioCtx.createGain(),lp=audioCtx.createBiquadFilter();lp.type="lowpass";lp.frequency.setValueAtTime(1250,when);lp.frequency.linearRampToValueAtTime(760,when+dur);bus.gain.setValueAtTime(.001,when);bus.gain.linearRampToValueAtTime(level,when+.2);bus.gain.setValueAtTime(level,when+Math.max(.21,dur-.28));bus.gain.exponentialRampToValueAtTime(.001,when+dur);[1,1.006,2.01].forEach((r,i)=>{const o=audioCtx.createOscillator(),v=audioCtx.createOscillator(),vg=audioCtx.createGain();o.type=i===2?"sine":"sawtooth";o.frequency.value=f*r;v.frequency.value=5.1+i*.35;vg.gain.value=2.8+i;o.detune.value=i?3:-4;v.connect(vg).connect(o.detune);o.connect(lp);o.start(when);v.start(when);o.stop(when+dur+.04);v.stop(when+dur+.04)});lp.connect(bus).connect(master);bus.connect(echoBus)}
+function playHandDrum(when,level){const src=audioCtx.createBufferSource(),bp=audioCtx.createBiquadFilter(),g=audioCtx.createGain();src.buffer=noiseBuffer;bp.type="bandpass";bp.frequency.value=720;bp.Q.value=.8;g.gain.setValueAtTime(level,when);g.gain.exponentialRampToValueAtTime(.001,when+.12);src.connect(bp).connect(g).connect(master);src.start(when);src.stop(when+.14)}
+function playDeepDrum(when,level){const o=audioCtx.createOscillator(),g=audioCtx.createGain(),lp=audioCtx.createBiquadFilter();o.type="sine";o.frequency.setValueAtTime(115,when);o.frequency.exponentialRampToValueAtTime(62,when+.34);lp.type="lowpass";lp.frequency.value=190;g.gain.setValueAtTime(level,when);g.gain.exponentialRampToValueAtTime(.001,when+.48);o.connect(lp).connect(g).connect(master);o.start(when);o.stop(when+.5)}
+function playWoodPercussion(when,level){const o=audioCtx.createOscillator(),g=audioCtx.createGain(),bp=audioCtx.createBiquadFilter();o.type="triangle";o.frequency.setValueAtTime(590,when);o.frequency.exponentialRampToValueAtTime(390,when+.075);bp.type="bandpass";bp.frequency.value=520;bp.Q.value=1.4;g.gain.setValueAtTime(level,when);g.gain.exponentialRampToValueAtTime(.001,when+.13);o.connect(bp).connect(g).connect(master);o.start(when);o.stop(when+.14)}
+function playWordlessVoice(f,when,dur,level){const bus=audioCtx.createGain(),formant=audioCtx.createBiquadFilter();formant.type="bandpass";formant.frequency.value=760;formant.Q.value=.75;bus.gain.setValueAtTime(.001,when);bus.gain.linearRampToValueAtTime(level,when+.3);bus.gain.setValueAtTime(level,when+Math.max(.31,dur-.38));bus.gain.exponentialRampToValueAtTime(.001,when+dur);[1,1.002,2].forEach((r,i)=>{const o=audioCtx.createOscillator();o.type=i===2?"sine":"triangle";o.frequency.value=f*r;o.detune.value=i?5:-4;o.connect(formant);o.start(when);o.stop(when+dur+.03)});formant.connect(bus).connect(master);bus.connect(echoBus)}
+function playNatureRustle(when){const src=audioCtx.createBufferSource(),bp=audioCtx.createBiquadFilter(),g=audioCtx.createGain();src.buffer=noiseBuffer;bp.type="bandpass";bp.frequency.value=2400;bp.Q.value=.45;g.gain.setValueAtTime(.001,when);g.gain.linearRampToValueAtTime(.008,when+.22);g.gain.exponentialRampToValueAtTime(.001,when+.9);src.connect(bp).connect(g).connect(master);src.start(when);src.stop(when+1)}
+function playClickSound(){if(!audioCtx||!uiBus)return;const now=audioCtx.currentTime,o=audioCtx.createOscillator(),g=audioCtx.createGain(),filter=audioCtx.createBiquadFilter();o.type="sine";o.frequency.setValueAtTime(760,now);o.frequency.exponentialRampToValueAtTime(430,now+.055);filter.type="bandpass";filter.frequency.value=650;filter.Q.value=1.2;g.gain.setValueAtTime(.055,now);g.gain.exponentialRampToValueAtTime(.001,now+.07);o.connect(filter).connect(g).connect(uiBus);o.start(now);o.stop(now+.075)}
+document.addEventListener("click",e=>{if(e.target.closest("button")&&!e.target.closest("button").disabled)setTimeout(playClickSound,0)});
+function toggleMusic(){
+ if(!audioCtx||!musicOn){startMusic();toast("原創排灣氛圍配樂：開");return}
+ master.gain.cancelScheduledValues(audioCtx.currentTime);master.gain.linearRampToValueAtTime(0,audioCtx.currentTime+.25);musicOn=false;document.getElementById("musicBtn").classList.remove("playing");document.getElementById("musicBtn").firstChild.textContent="♪";toast("原創排灣氛圍配樂：關");
+}
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2e7ddf0ad76ddc1',t:'MTc4NzI5NjczOQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;" src="./迎正神｜女巫實戰訓練_files/saved_resource.html"></iframe>
+
+</body></html>
